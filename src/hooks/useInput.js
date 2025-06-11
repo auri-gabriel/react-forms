@@ -7,7 +7,7 @@ export function useInput(defaultValue, validationFunction) {
   const valueIsValid = validationFunction(enteredValue);
 
   function handleInputChange(e) {
-    setEnteredValues(e.target.value);
+    setEnteredValue(e.target.value);
     setDidEdit(false);
   }
 
